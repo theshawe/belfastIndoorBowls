@@ -6716,13 +6716,59 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 header {
-  background: #35afea; }
+  background: #0575E6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #021B79, #0575E6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+header {
+  position: relative;
+  top: 0;
+  height: 140px;
+  z-index: 100; }
+
+.rainbow {
+  background-size: contain; }
+  .rainbow:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(69deg, #4c8cedd1 40%, #1b67b161 35%, #1e14bdb3 10%);
+    opacity: 1; }
+
+.tile.is-vertical > .tile.is-child:not(:last-child) {
+  margin-bottom: 1.5rem !important; }
+
+.tile.is-vertical > .tile.is-child:not(:last-child) {
+  margin-bottom: 1.5rem !important; }
+
+.tile.is-child {
+  margin: 0 !important;
+  margin-bottom: 0px; }
+
+.notification.is-primary {
+  background-color: #00d1b2;
+  color: #fff;
+  background: #EFE38F;
+  background: -webkit-linear-gradient(to right, #51D2DB, #EFE38F);
+  background: linear-gradient(to right, #51D2DB, #EFE38F);
+  border-radius: 0; }
+
+.notification.is-warning {
+  background-color: #2d7ad8;
+  color: rgba(255, 255, 255, 0.7); }
 
 img.topLeftLogo {
-  margin: 15px -20px -12px 35px; }
+  padding: 1em;
+  background-color: white; }
 
 .navbar {
-  background: #2ba1ce61; }
+  background-color: #0d87d4; }
 
 .logo {
   padding: 1em;
@@ -6734,9 +6780,9 @@ img.topLeftLogo {
 a.navbar-item,
 .navbar-link {
   cursor: pointer;
-  color: #050c0c;
-  font-size: 26px;
-  font-weight: 800;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 100;
   letter-spacing: -2px;
   text-transform: capitalize; }
 
@@ -6748,6 +6794,9 @@ a.link.is-info {
   font-weight: 900;
   line-height: 1em;
   padding-top: 14px; }
+
+.tile {
+  border-radius: 0px; }
 
 .carousel {
   position: relative;

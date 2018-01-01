@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width">
-<!--  Essential META Tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+	<!--  Essential META Tags -->
 <meta property="og:title" content="Belfast Indoor Bowls Club" />
 <meta property="og:description" content="Belfast Indoor Bowls Club 115 Milltown Road, Belfast, BT8 7XP has been established since 1966 and is one of the largest indoor bowling venues within the UK" />
 <meta property="og:image" content="http://tbc.com/jpg" />
@@ -25,62 +26,53 @@
 <link
   rel="apple-touch-icon"
   sizes="180x180"
-  href="http://192.168.1.68:4000/favicons/apple-touch-icon.png"
+  href="http://localhost:4000/favicons/apple-touch-icon.png"
 />
 <link
   rel="icon"
   type="image/png"
   sizes="32x32"
-  href="http://192.168.1.68:4000/favicons/favicon-32x32.png"
+  href="http://localhost:4000/favicons/favicon-32x32.png"
 />
 <link
   rel="icon"
   type="image/png"
   sizes="16x16"
-  href="http://192.168.1.68:4000/favicons/favicon-16x16.png"
+  href="http://localhost:4000/favicons/favicon-16x16.png"
 />
-<link rel="manifest" href="http://192.168.1.68:4000/favicons/site.webmanifest" />
+<link rel="manifest" href="http://localhost:4000/favicons/site.webmanifest" />
 <link
   rel="mask-icon"
-  href="http://192.168.1.68:4000/favicons/safari-pinned-tab.svg"
+  href="http://localhost:4000/favicons/safari-pinned-tab.svg"
   color="#06091b"
 />
 
-<title>hello</title>
-<!-- Custom CSS -->
-<link rel="stylesheet" href="/css/main.css">
-<link rel="stylesheet" href="https://use.typekit.net/yim0qqq.css" />
+	<title>hello</title>
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="https://use.typekit.net/yim0qqq.css" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
 
-		<script src="https://kit.fontawesome.com/2348ffa90b.js"></script>
+	<script src="https://kit.fontawesome.com/2348ffa90b.js"></script>
 
 </head>
+
 <body>
-<header>
-  <h1></h1>
+
+	<section class="rainbow">
+		<header>
   <nav class="level">
   <p class="level-item level-left">
-    <img
-      class="topLeftLogo"
-      src="/images/belfastIndoorBowlsLogo.png"
-      width="auto"
-      height="auto"
-      style="height:140px;"
-    />
-    <a class="link is-info">Belfast Indoor Bowls Club</a>
+    <img class="topLeftLogo" src="/images/belfastIndoorBowlsLogo.png" width="auto" height="auto"
+      style="height:140px;" />
+    <a style="display: none;" class="link is-info">Belfast Indoor Bowls Club</a>
   </p>
-</nav>
-<nav class="navbar" role="navigation" aria-label="main navigation">
+
   <div class="navbar-brand">
-    <a
-      role="button"
-      class="navbar-burger burger"
-      aria-label="menu"
-      aria-expanded="false"
-      data-target="navbarBasicExample"
-    >
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+      data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -175,11 +167,7 @@
         <div class="navbar-item">
           <div class="navbar-brand">
             <a class="navbar-item" href="/">
-              <img
-                src="/images/irishBowlingAssociationLogo.png"
-                width="auto"
-                height="auto"
-              />
+              <img src="/images/irishBowlingAssociationLogo.png" width="auto" height="auto" />
             </a>
           </div>
         </div>
@@ -187,12 +175,8 @@
     </div>
   </div>
 </nav>
-
 </header>
-
-<section class="rainbow">
-
-<div class="carousel is-5 carousel-animated carousel-animate-slide">
+		<div class="carousel is-5 carousel-animated carousel-animate-slide">
   <div class="carousel-container">
     <div class="carousel-item is-active">
       <figure class="image is-2by1">
@@ -240,41 +224,107 @@
   </div>
 </div>
 
-<div class="container max-height">
 
+		<div class="tile is-ancestor">
+    <div class="tile is-vertical is-8">
+        <div class="tile">
+            <div class="tile is-parent is-vertical">
+                <article class="tile is-child notification is-primary">
+                    <p class="title">Vertical...</p>
+                    <p class="subtitle">Top tile</p>
+                </article>
+                <article class="tile is-child notification is-warning">
+                    <p class="title">Address</p>
+                    <p class="subtitle">115 Milltown Road<br>
+                        Shaws Bridge<br>
+                        Belfast<br>
+                        BT8 7XP</p>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-info">
+                    <p class="title">MEMBERSHIP</p>
+                    <p class="subtitle">Join Today / Forms</p>
+                    <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/640x480.png">
+                    </figure>
+                </article>
+            </div>
+        </div>
+        <div class="tile is-parent">
+            <article class="tile is-child notification is-danger">
+                <p class="title">Phone / Fax</p>
+                <p class="subtitle">
+                    tel: +44 (0) 2890 491 396 <br>
+                    fax: +44 (0) 2890 491 649 <br> </p>
+                <div class="content">
+
+                    email: <a href="mailto:belfastindoorbowls@btconnect.com">belfastindoorbowls@btconnect.com</a>
+
+                </div>
+            </article>
+        </div>
+    </div>
+    <div class="tile is-parent">
+        <article class="tile is-child notification is-success">
+            <div class="content">
+                <p class="title">SUMMER OPENING HOURS:</p>
+                <p class="subtitle"> THE STADIUM IS OPEN FROM MONDAY TO WEDNESDAY 10am - 2.30pm</p>
+                <div class="content">
+                    <p class="subtitle"> THURSDAY & FRIDAY 10am - 2.30pm AND 7pm - 11pm
+                    </p>
+                    <p class="subtitle"> THE SHOP IS OPEN MONDAY TO FRIDAY 10am - 2pm
+                    </p>
+                    <p class="subtitle"> THE RESTAURANT IS CLOSED UNTIL FURTHER NOTICE </h2>
+                    </p>
+                </div>
+            </div>
+        </article>
+    </div>
 </div>
-</section>
 
-<footer>
-  <nav
-    class="navbar is-fixed-bottom"
-    role="navigation"
-    aria-label="main navigation"
-  >
+
+
+
+		<div class="container max-height">
+			
+		</div>
+	</section>
+
+
+
+	<footer>
+  <nav class="navbar is-fixed-bottom" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        <img
-          src="/images/belfastIndoorBowlsLogo.png"
-          width="auto"
-          height="200"
-        />
+        <img src="/images/belfastIndoorBowlsLogo.png" width="auto" height="200" />
       </a>
     </div>
+
+    <nav class="level">
+      <div class="level-item has-text-centered">
+        <div>
+
+          <p class="heading"> <a href="">Terms | Privacy</a></p>
+
+        </div>
+      </div>
+
+    </nav>
+
+
+
+
 
     <div class="navbar-end">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-          <img
-            src="/images/irishBowlingAssociationLogo.png"
-            width="auto"
-            height="200"
-          />
+          <img src="/images/irishBowlingAssociationLogo.png" width="auto" height="200" />
         </a>
       </div>
     </div>
   </nav>
 </footer>
-
 </body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
