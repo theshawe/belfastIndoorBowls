@@ -1,0 +1,38 @@
+header {
+  background: #35afea;
+}
+
+img.topLeftLogo {
+  margin: 15px -20px -12px 35px;
+}
+
+.navbar {
+  background: #2ba1ce61;
+}
+
+.logo {
+  padding: 1em;
+  padding-left: 16px;
+  text-shadow: 0 0 black;
+  background: #35afea;
+  margin-left: 0px;
+}
+
+a.navbar-item,
+.navbar-link {
+  cursor: pointer;
+  color: #050c0c;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  text-transform: capitalize;
+}
+a.link.is-info {
+  padding-left: 1em;
+  font-size: 4em;
+  text-transform: capitalize;
+  color: #0c0505de;
+  font-weight: 900;
+  line-height: 1em;
+  padding-top: 14px;
+}

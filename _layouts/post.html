@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width">
+{% include meta.html %}
+<title>{{ page.title }}</title>
+
+
+<!-- Custom CSS -->
+
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="https://use.typekit.net/yim0qqq.css" />
+
+
+</head>
+<body>
+{% include header/header.html %}
+{{ content }}
+{% include footer/footer.html %}
+</body>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+{% include tracking/ga.html %}
+
+
+
+
+    </body>
+</html>

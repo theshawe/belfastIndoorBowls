@@ -1,0 +1,29 @@
+title: Belfast Indoor Bowls Club
+email: david@invisiblebuilding.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Belfast Indoor Bowls Club 115 Milltown Road, Belfast, BT8 7XP has been established since 1966 and is one of the largest indoor bowling venues within the UK
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: crumbsvegan
+github_username: tbc
+ig_username: crumbsveganbakery
+
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+sass:
+  sass_dir: css
