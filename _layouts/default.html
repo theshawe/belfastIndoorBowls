@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width">
-{% include meta.html %}
-<title>{{ page.title }}</title>
-<!-- Custom CSS -->
-<link rel="stylesheet" href="/css/main.css">
-<link rel="stylesheet" href="https://use.typekit.net/yim0qqq.css" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+	{% include meta.html %}
+	<title>{{ page.title }}</title>
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="https://use.typekit.net/yim0qqq.css" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
 
-		<script src="https://kit.fontawesome.com/2348ffa90b.js"></script>
+	<script src="https://kit.fontawesome.com/2348ffa90b.js"></script>
 
 </head>
+
 <body>
-{% include header/header.html %}
-<section class="rainbow">
 
-{% include slider.html %}
-<div class="container max-height">
-{{ content }}
-</div>
-</section>
+	<section class="rainbow">
+		{% include header/header.html %}
+		{% include slider.html %}
 
-{% include footer/footer.html %}
+		{% include home/hub.html %}
+
+
+
+
+		<div class="container max-height">
+			{{ content }}
+		</div>
+	</section>
+
+
+
+	{% include footer/footer.html %}
 </body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 {% include tracking/ga.html %}
