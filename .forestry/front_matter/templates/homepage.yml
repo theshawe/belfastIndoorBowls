@@ -1,0 +1,31 @@
+---
+label: Homepage
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: category
+  label: category
+- type: file
+  name: slide01
+  label: slide01
+- type: file
+  name: slide02
+  label: slide02
+- type: file
+  name: slide03
+  label: slide03
+- type: file
+  name: slide04
+  label: slide04
+- type: file
+  name: slide05
+  label: slide05
+- type: file
+  name: slide06
+  label: slide06
