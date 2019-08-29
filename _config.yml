@@ -3,7 +3,7 @@ email: david@invisiblebuilding.com
 description: >- # this means to ignore newlines until "baseurl:"
   Belfast Indoor Bowls Club 115 Milltown Road, Belfast, BT8 7XP has been established since 1966 and is one of the largest indoor bowling venues within the UK
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://127.0.0.1:4000/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: crumbsvegan
 github_username: tbc
 ig_username: crumbsveganbakery
