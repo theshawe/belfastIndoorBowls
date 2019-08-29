@@ -1,0 +1,58 @@
+---
+layout: leagues
+title: Teams
+category: teams
+---
+
+<div class="columns">
+  <div class="column">
+    TEAMS
+  </div>
+  <div class="column">
+    LEAGUES
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column">
+
+    {% for teamInfo in site.data.summerLeagueTeams %}
+    <h2>{{ teamInfo.Teams }}</h2>
+    <a href={% if teamInfo.Leagues contains "TUESDAY" %}"tuesday-morning-pairs-league" {% elsif teamInfo.Leagues contains "WEDNESDAY"  %} "/wednesday-morning-pairs-league" {% elsif teamInfo.Leagues contains "THURSDAY"  %} "thursday-evening-pairs-league"  {% else %} "/" {% endif %}>{{ teamInfo.Leagues }}</a>
+    {% endfor %}
+
+
+
+  </div>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th><abbr title="TEAMS">TEAMS</abbr></th>
+      <th><abbr title="LEAGUES">LEAGUES</abbr></th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th><abbr title="TEAMS">TEAMS</abbr></th>
+      <th><abbr title="LEAGUES">LEAGUES</abbr></th>
+    </tr>
+  </tfoot>
+
+  <tbody>
+
+    <tr>
+            {% for data in site.data.summerLeagueTeams %}
+      <th>{{ data.Teams }}</th>
+      {% endfor %}
+      <td>
+        <a
+          {% for data in site.data.summerLeagueTeams %}
+          href={% if teamInfo.Leagues contains "TUESDAY" %}"tuesday-morning-pairs-league" {% elsif teamInfo.Leagues contains "WEDNESDAY"  %} "/wednesday-morning-pairs-league" {% elsif teamInfo.Leagues contains "THURSDAY"  %} "thursday-evening-pairs-league"  {% else %} "/" {% endif %}
+          title="{{ data.Leagues }}">{{ data.Leagues }}</a></td>
+          {% endfor %}
+    </tr>
+
+  </tbody>
+</table>

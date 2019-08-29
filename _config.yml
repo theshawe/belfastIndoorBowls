@@ -7,12 +7,16 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: crumbsvegan
 github_username: tbc
 ig_username: crumbsveganbakery
+maps:
+  google:
+    api_key: AIzaSyCbYtCLVRD2qxfGCijWarnE7LATNa-Dkdg
 
 # Build settings
 markdown: kramdown
 
 plugins:
   - jekyll-feed
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

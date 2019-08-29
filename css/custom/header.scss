@@ -1,0 +1,73 @@
+header {
+  background: #042746;
+}
+
+header a.navbar-item {
+  color: #e6d3d3;
+}
+
+header .navbar-item.has-dropdown a {
+  color: #e6d3d3;
+}
+
+.mainNavigation {
+    padding: 1.5em 4em 0em 4em;
+}
+
+.iframe-container {
+  height: 100vh;
+}
+
+.siema {
+  margin: 0em 0em 2em 0em;
+  opacity: 0.5;
+}
+.navbar-item.has-dropdown.is-active .navbar-link,
+.navbar-item.has-dropdown:hover .navbar-link {
+  background-color: #347aa0 !important;
+  color: #fbf4f4 !important;
+  box-shadow: 2px 1px 9px 5px #0406312b;
+}
+
+.navbar-link.is-active,
+.navbar-link:hover,
+a.navbar-item.is-active,
+a.navbar-item:hover {
+  background-color: #347aa0 !important;
+  color: #fbf4f4 !important;
+  box-shadow: 2px 1px 9px 5px #0406312b;
+}
+
+.navbar-dropdown {
+  background-color: #347aa0 !important;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top: 5px solid #0979ec;
+  box-shadow: 0 8px 8px rgba(6, 11, 39, 0.56);
+  font-size: 0.875rem;
+  left: 0;
+  min-width: 100%;
+  position: absolute;
+  top: 100%;
+  z-index: 20;
+}
+
+.topLayerBranding {
+  z-index: 1000;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.topLayerBranding .title {
+  font-family: zen-new, sans-serif;
+  font-size: 4em;
+  color: #fff;
+}
+
+.topLayerBranding .subtitle {
+  font-size: 2em;
+  color: #fff;
+}
