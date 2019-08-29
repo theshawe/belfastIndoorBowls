@@ -1,118 +1,119 @@
-
-<h2 id="Welcome-To-The-Stadium" class="subtitle has-text-centered has-text-weight-bold"> The Stadium shop is open <br> Monday - Friday 10am - 2pm</h2>
+<h2
+  id="Welcome-To-The-Stadium"
+  class="subtitle has-text-centered has-text-weight-bold"
+>
+  {{ page.hubTitle }}
+</h2>
 
 <div class="tile is-ancestor">
-    <div class="tile is-vertical is-8">
-        <div class="tile">
-            <div class="tile is-parent is-vertical">
-                <article class="tile is-child notification is-primary">
-                 <div class="row">
-
-                    <div class="columns">
-                      <div class="column"><a href="/leagues/">Leagues</a></div>
-                      <div class="column"><a href="/teams/">Teams</a></div>
-                      <div class="column"><a hrrf="/fixtures/">Fixtures</a></div>
-                      <div class="column"><a href="/results/">Results</a></div>
-                    </div>
-
-                 </div>
-                </article>
-                <article class="tile is-child notification is-warning">
-                <p class="title">Address</p>
-                <div class="columns">
-                <div class="column">  
-                    <p class="subtitle">115 Milltown Road<br>Shaws Bridge<br>Belfast<br>BT8 7XP</p></div>
-                <div class="column"><figure class="image is-16by9 is-640x360">
-                    <img src="/images/homepagebowlsoutfront.png">
-                    </figure>
-                </div>
-                </div>
-                </article>
+  <div class="tile is-vertical is-8">
+    <div class="tile">
+      <div class="tile is-parent is-vertical">
+        <article class="tile is-child notification is-primary">
+          <div class="row">
+            <div class="columns">
+              <div class="column"><a href="/leagues/">Leagues</a></div>
+              <div class="column"><a href="/teams/">Teams</a></div>
+              <div class="column"><a hrrf="/fixtures/">Fixtures</a></div>
+              <div class="column"><a href="/results/">Results</a></div>
             </div>
-            <div class="tile is-parent">
-                <article class="tile is-child notification is-info is-membership">
-                    <p class="title has-text-centered">MEMBERSHIP</p>
-                    <p class="subtitle has-text-centered">Register at the stadium or online today.</p>
-                    <figure class="image is-4by3">
-                        <img src="/images/jointoday.png">
-                    </figure>
-                </article>
+          </div>
+        </article>
+        <article class="tile is-child notification is-warning">
+          <p class="title">Address</p>
+          <div class="columns">
+            <div class="column">
+              <p class="subtitle">
+                115 Milltown Road<br />Shaws Bridge<br />Belfast<br />BT8 7XP
+              </p>
             </div>
-        </div>
-        <div class="tile is-parent">
-            <article class="tile is-child notification is-danger">
-                <p class="title">Phone / Fax</p>
-                <p class="subtitle">
-                    tel: +44 (0) 2890 491 396 <br>
-                    fax: +44 (0) 2890 491 649 <br> </p>
-                <div class="content">
-
-                    email: <a href="mailto:belfastindoorbowls@btconnect.com">belfastindoorbowls@btconnect.com</a>
-
-                </div>
-            </article>
-        </div>
+            <div class="column">
+              <figure class="image is-16by9 is-640x360">
+                <img src="/images/homepagebowlsoutfront.png" />
+              </figure>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-info is-membership">
+          <p class="title has-text-centered">MEMBERSHIP</p>
+          <p class="subtitle has-text-centered">
+            Register at the stadium or online today.
+          </p>
+          <figure class="image is-4by3">
+            <img src="/images/jointoday.png" />
+          </figure>
+        </article>
+      </div>
     </div>
     <div class="tile is-parent">
-        <article class="tile is-child notification is-success ">
-            <div class="content">
+      <article class="tile is-child notification is-danger">
+        <p class="title">Phone / Fax</p>
+        <p class="subtitle">
+          tel: +44 (0) 2890 491 396 <br />
+          fax: +44 (0) 2890 491 649 <br />
+        </p>
+        <div class="content">
+          email:
+          <a href="mailto:belfastindoorbowls@btconnect.com"
+            >belfastindoorbowls@btconnect.com</a
+          >
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child notification is-success ">
+      <div class="content">
+        <div class="columns is-full">
+          <div class="column ">
+            <p class="title has-text-centered">{{ page.seasonHours }}</p>
+          </div>
+        </div>
 
-<div class="columns is-full">
+        <div class="columns">
+          <div class="column is-uppercase has-text-weight-bold">Day</div>
+          <div class="column is-uppercase has-text-weight-bold">Morning</div>
+          <div class="column is-uppercase has-text-weight-bold">Evening</div>
+        </div>
 
-<div class="column ">
-<p class="title has-text-centered">SUMMER HOURS</p>
+        <div class="columns">
+          <div class="column">Monday</div>
+          <div class="column">{{ page.mondayMorning }}</div>
+          <div class="column">{{ page.mondayEvening }}</div>
+        </div>
+
+        <div class="columns">
+          <div class="column">Tuesday</div>
+          <div class="column">{{ page.tuesdayMorning }}</div>
+          <div class="column">{{ page.tuesdayEvening }}</div>
+        </div>
+
+        <div class="columns">
+          <div class="column">Wednesday</div>
+          <div class="column">{{ page.wednesdayMorning }}</div>
+          <div class="column">{{ page.wednesdayEvening }}</div>
+        </div>
+
+        <div class="columns">
+          <div class="column">Thursday</div>
+          <div class="column">{{ page.thursdayMorning }}</div>
+          <div class="column">{{ page.thursdayEvening }}</div>
+        </div>
+
+        <div class="columns">
+          <div class="column">Friday</div>
+          <div class="column">{{ page.fridayMorning }}</div>
+          <div class="column">{{ page.fridayEvening }}</div>
+        </div>
+
+        <div class="columns">
+          <div class="column">Saturday/Sunday</div>
+          <div class="column">{{ page.saturdaySundayMorning }}</div>
+          <div class="column">{{ page.saturdaySundayEvening }}</div>
+        </div>
+      </div>
+    </article>
+  </div>
 </div>
-
-</div>
-
-<div class="columns">
-                        <div class="column is-uppercase has-text-weight-bold">Day</div>
-                        <div class="column is-uppercase has-text-weight-bold">Morning</div>
-                        <div class="column is-uppercase has-text-weight-bold">Evening</div>
-</div>
-
-
-                <div class="columns">
-                  <div class="column">Monday</div>
-                  <div class="column">10am - 2.30pm</div>
-                  <div class="column">Closed</div>
-                </div>
-
-
-                <div class="columns">
-                        <div class="column">Tuesday</div>
-                        <div class="column">10am - 2.30pm</div>
-                        <div class="column">Closed</div>
-                      </div>
-
-
-                <div class="columns">
-                        <div class="column">Wednesday</div>
-                        <div class="column">10am - 2.30pm</div>
-                        <div class="column">Closed</div>
-                      </div>
-
-                <div class="columns">
-                        <div class="column">Thursday</div>
-                        <div class="column">10am - 2.30pm</div>
-                        <div class="column">7pm - 11pm</div>
-                      </div>
-
-                      <div class="columns">
-                            <div class="column">Friday</div>
-                            <div class="column">10am</div>
-                            <div class="column">7pm - 11pm</div>
-                          </div>
-
-                      <div class="columns">
-                            <div class="column">Saturday/Sunday</div>
-                            <div class="column">Closed</div>
-                            <div class="column">Closed</div>
-                          </div>
-
-
-</div></article></div></div>
-
-         
-
-    
