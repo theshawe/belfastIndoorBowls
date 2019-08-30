@@ -61,8 +61,8 @@
 
 <body>
 
-<section class="rainbow">
-<header>
+	<section class="rainbow">
+		<header>
   <nav class="level mainNavigation">
   <a href="" class="level-left">
     <img class="" src="/images/belfastIndoorBowlsLogo.png" width="44px" height="auto" />
@@ -115,9 +115,9 @@
             Officals
           </a>
           <a  href="/faq"
-          class="navbar-item">
-          FAQ
-        </a>
+            class="navbar-item">
+            FAQ
+          </a>
         </div>
       </div>
 
@@ -176,7 +176,7 @@
 
       <div class="buttons">
 
-        <button class="button is-primary modal-button" data-target="#myModal" aria-haspopup="true">Memebership / Join
+        <button class="button is-primary modal-button" data-target="#myModal" aria-haspopup="true"> Join
           Today </button>
 
         <div class="modal" id="myModal">
@@ -285,11 +285,11 @@
   </div>
 </nav>
 </header>
-<div class="container max-height">
+		<div class="container max-height">
 
 
 
-<div style="padding-bottom: 200px;" class="carousel is-5 carousel-animated carousel-animate-slide">
+			<div style="padding-bottom: 200px;" class="carousel is-5 carousel-animated carousel-animate-slide">
   <div class="carousel-container">
     <div class="carousel-item is-active">
       <figure class="image is-2by1">
@@ -338,8 +338,8 @@
 </div>
 
 
-</div>
-<footer>
+		</div>
+		<footer>
   <nav
     class="navbar is-fixed-bottom"
     role="navigation"
@@ -378,15 +378,28 @@
   </nav>
 </footer>
 
-</section>
+	</section>
 
 
 
 </body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
+<script src="/js/siema.min.js"></script>
+<script>
+	const mySiema = new Siema({
+
+		duration: 1000,
+		loop: true,
+	});
+
+	// listen for keydown event
+	setInterval(() => mySiema.next(), 4000)
+</script>
 
 <script src="/js/nav.js"></script>
+<script src="/js/modal.js"></script>
+<script src="/js/close.js"></script>
 <script src="/js/slider.js"></script>
 
 </body>

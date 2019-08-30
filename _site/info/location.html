@@ -61,8 +61,8 @@
 
 <body>
 
-<section class="rainbow">
-<header>
+	<section class="rainbow">
+		<header>
   <nav class="level mainNavigation">
   <a href="" class="level-left">
     <img class="" src="/images/belfastIndoorBowlsLogo.png" width="44px" height="auto" />
@@ -115,9 +115,9 @@
             Officals
           </a>
           <a  href="/faq"
-          class="navbar-item">
-          FAQ
-        </a>
+            class="navbar-item">
+            FAQ
+          </a>
         </div>
       </div>
 
@@ -176,7 +176,7 @@
 
       <div class="buttons">
 
-        <button class="button is-primary modal-button" data-target="#myModal" aria-haspopup="true">Memebership / Join
+        <button class="button is-primary modal-button" data-target="#myModal" aria-haspopup="true"> Join
           Today </button>
 
         <div class="modal" id="myModal">
@@ -287,9 +287,9 @@
 </header>
 
 
-	<div class="hero-body subNavHero">
-	  <div class="container">
-		<nav class="breadcrumb is-left is-large" aria-label="breadcrumbs">
+		<div class="hero-body subNavHero">
+			<div class="container">
+				<nav class="breadcrumb is-left is-large" aria-label="breadcrumbs">
   <ul>
     <li class="is-active"><a href="/info/location">Location</a></li>
     <li ><a href="/info/club-facilities">Club Facilities</a></li>
@@ -300,26 +300,27 @@
   </ul>
 </nav>
 
-		</div>
-		</div>
-
-
-<section style="background-image: url('../images/bowlsPink.jpg'); margin-bottom: 50px;" class="hero is-primary is-medium">
-		<div class="hero-body ">
-		  <div class="container">
-
-			<h1 class="title">
-			 Getting to Belfast Indoor Bowls
-			</h1>
-			<h2 class="subtitle">Belfast Indoor Bowls Club is located on the Milltown Road, Shaws Bridge, Belfast.</h2>
-		  </div>
+			</div>
 		</div>
 
-	  </section>
 
-<div class="container max-height">
+		<section style="background-image: url('../images/bowlsPink.jpg'); margin-bottom: 50px;"
+			class="hero is-primary is-medium">
+			<div class="hero-body ">
+				<div class="container">
 
-<div class="container">
+					<h1 class="title">
+						Getting to Belfast Indoor Bowls
+					</h1>
+					<h2 class="subtitle">Belfast Indoor Bowls Club is located on the Milltown Road, Shaws Bridge, Belfast.</h2>
+				</div>
+			</div>
+
+		</section>
+
+		<div class="container max-height">
+
+			<div class="container">
   <div class="columns">
     <div class="column">
       <div class="column">
@@ -359,19 +360,21 @@
   </div>
 </div>
 
-</div>
+		</div>
 
 
+		
+
+		<div class="googlemap">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12175.312156882597!2d-5.960508145333003!3d54.537053394325284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48610f4c93621dfd%3A0xfbb0e78d9720f057!2sBelfast+Indoor+Bowls+Club!5e0!3m2!1sen!2suk!4v1561584326700!5m2!1sen!2suk"
+				width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+
+		
 
 
-<div class="googlemap">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12175.312156882597!2d-5.960508145333003!3d54.537053394325284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48610f4c93621dfd%3A0xfbb0e78d9720f057!2sBelfast+Indoor+Bowls+Club!5e0!3m2!1sen!2suk!4v1561584326700!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
-
-
-
-
-<footer>
+		<footer>
   <nav
     class="navbar is-fixed-bottom"
     role="navigation"
@@ -410,16 +413,28 @@
   </nav>
 </footer>
 
-</section>
+	</section>
 
 
 
 </body>
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/js/siema.min.js"></script>
+<script>
+	const mySiema = new Siema({
 
+		duration: 1000,
+		loop: true,
+	});
+
+	// listen for keydown event
+	setInterval(() => mySiema.next(), 4000)
+</script>
 
 <script src="/js/nav.js"></script>
+<script src="/js/modal.js"></script>
+<script src="/js/close.js"></script>
 <script src="/js/slider.js"></script>
+
 
 </body>
 

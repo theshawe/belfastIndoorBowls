@@ -20,56 +20,71 @@
 
 <body>
 
-<section class="rainbow">
-{% include header/header.html %}
+	<section class="rainbow">
+		{% include header/header.html %}
 
 
-	<div class="hero-body subNavHero">
-	  <div class="container">
-		{% include navigation/infoNav.html %}
-		</div>
-		</div>
-
-
-<section style="background-image: url('../images/{{ page.cover }}'); margin-bottom: 50px;" class="hero is-primary is-medium">
-		<div class="hero-body ">
-		  <div class="container">
-
-			<h1 class="title">
-			 {{ page.title }}
-			</h1>
-			<h2 class="subtitle">{{ page.subtitle }}</h2>
-		  </div>
+		<div class="hero-body subNavHero">
+			<div class="container">
+				{% include navigation/infoNav.html %}
+			</div>
 		</div>
 
-	  </section>
 
-<div class="container max-height">
+		<section style="background-image: url('../images/{{ page.cover }}'); margin-bottom: 50px;"
+			class="hero is-primary is-medium">
+			<div class="hero-body ">
+				<div class="container">
 
-{{ content }}
-</div>
+					<h1 class="title">
+						{{ page.title }}
+					</h1>
+					<h2 class="subtitle">{{ page.subtitle }}</h2>
+				</div>
+			</div>
+
+		</section>
+
+		<div class="container max-height">
+
+			{{ content }}
+		</div>
 
 
-{% if page.category == 'location' %}
+		{% if page.category == 'location' %}
 
-<div class="googlemap">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12175.312156882597!2d-5.960508145333003!3d54.537053394325284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48610f4c93621dfd%3A0xfbb0e78d9720f057!2sBelfast+Indoor+Bowls+Club!5e0!3m2!1sen!2suk!4v1561584326700!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
+		<div class="googlemap">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12175.312156882597!2d-5.960508145333003!3d54.537053394325284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48610f4c93621dfd%3A0xfbb0e78d9720f057!2sBelfast+Indoor+Bowls+Club!5e0!3m2!1sen!2suk!4v1561584326700!5m2!1sen!2suk"
+				width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
 
-{% endif %}
+		{% endif %}
 
 
-{% include footer/footer.html %}
-</section>
+		{% include footer/footer.html %}
+	</section>
 
 
 
 </body>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-{% include tracking/ga.html %}
+<script src="/js/siema.min.js"></script>
+<script>
+	const mySiema = new Siema({
+
+		duration: 1000,
+		loop: true,
+	});
+
+	// listen for keydown event
+	setInterval(() => mySiema.next(), 4000)
+</script>
 
 <script src="/js/nav.js"></script>
+<script src="/js/modal.js"></script>
+<script src="/js/close.js"></script>
 <script src="/js/slider.js"></script>
+
 
 </body>
 
