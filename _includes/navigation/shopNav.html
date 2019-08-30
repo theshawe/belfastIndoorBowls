@@ -1,0 +1,8 @@
+<nav class="breadcrumb is-left is-large" aria-label="breadcrumbs">
+  <ul>
+    <li {% if page.category == 'location' %}class="is-active"{% endif %}><a href="/info/location">Shoes</a></li>
+    <li {% if page.category == 'club-facilities' %}class="is-active"{% endif %}><a href="/info/club-facilities">Bowls</a></li>
+    <li {% if page.category == 'session-times' %}class="is-active"{% endif %}><a href="/info/session-times">Clothing</a></li>
+    <li {% if page.category == 'bowls-programme' %}class="is-active"{% endif %}><a href="/info/bowls-programme" aria-current="page">Accessories</a></li>
+  </ul>
+</nav>

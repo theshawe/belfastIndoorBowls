@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+	{% include meta.html %}
+	<title>{{ page.title }}</title>
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="https://use.typekit.net/cpm1pmu.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+
+	<script src="https://kit.fontawesome.com/2348ffa90b.js"></script>
+
+</head>
+
+<body>
+
+<section class="rainbow">
+{% include header/header.html %}
+
+
+	<div class="hero-body subNavHero">
+	  <div class="container">
+		{% include navigation/shopNav.html %}
+		</div>
+		</div>
+
+
+<section style="background-image: url('../images/{{ page.cover }}'); margin-bottom: 50px;" class="hero is-primary is-medium">
+		<div class="hero-body ">
+		  <div class="container">
+
+			<h1 class="title">
+			 {{ page.title }}
+			</h1>
+			<h2 class="subtitle">{{ page.subtitle }}</h2>
+		  </div>
+		</div>
+
+	  </section>
+
+<div class="container max-height">
+
+{{ content }}
+</div>
+
+
+{% if page.category == 'location' %}
+
+<div class="googlemap">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12175.312156882597!2d-5.960508145333003!3d54.537053394325284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48610f4c93621dfd%3A0xfbb0e78d9720f057!2sBelfast+Indoor+Bowls+Club!5e0!3m2!1sen!2suk!4v1561584326700!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+{% endif %}
+
+
+{% include footer/footer.html %}
+</section>
+
+
+
+</body>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+{% include tracking/ga.html %}
+
+<script src="/js/nav.js"></script>
+<script src="/js/slider.js"></script>
+
+</body>
+
+</html>
