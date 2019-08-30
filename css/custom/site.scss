@@ -51,14 +51,12 @@ a.navbar-item,
 .navbar-link {
   cursor: pointer;
   color: #fff;
-  font-size: 22px;
   letter-spacing: -2px;
   text-transform: uppercase;
 }
 
 a.link.is-info {
   padding-left: 1em;
-  font-size: 2em;
   text-transform: capitalize;
   color: #0c0505de;
   font-weight: 900;
@@ -89,7 +87,6 @@ a.link.is-info {
 
 header a.navbar-item {
   color: #e4e2e4;
-  font-size: 1.5em;
   font-weight: 100;
   letter-spacing: 2px;
 }
@@ -102,6 +99,10 @@ header a.navbar-item {
 
 .breadcrumb a {
   color: #96a4bb;
+}
+
+.breadcrumb a:hover {
+  color: #ccc738 !important;
 }
 
 .breadcrumb li.is-active a {
