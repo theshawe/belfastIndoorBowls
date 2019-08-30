@@ -6720,8 +6720,7 @@ body {
   background-image: linear-gradient(41deg, #004578 50%, #07b680 71%); }
 
 .rainbow {
-  background: #002144;
-  height: 100vh; }
+  background: #002144; }
 
 header {
   position: relative;
@@ -6812,6 +6811,9 @@ header a.navbar-item {
   margin: 0; }
 
 /* home hub */
+h2#Welcome-To-The-Stadium {
+  color: #fff; }
+
 .notification.is-membership {
   background: #0f4278 !important; }
 
@@ -6848,6 +6850,14 @@ header a.navbar-item {
   display: inline-table;
   vertical-align: middle;
   line-height: 100%; }
+
+/* home modal */
+.modal-content {
+  background: #00397396;
+  padding: 2em; }
+
+label.label {
+  color: #ecb50a; }
 
 /* home footer */
 footer .level {

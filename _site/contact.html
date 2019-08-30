@@ -51,6 +51,7 @@
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://use.typekit.net/cpm1pmu.css">
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
 
@@ -79,7 +80,7 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a href="http://localhost:4000" class="navbar-item">
+      <a href="/" class="navbar-item">
         Home
       </a>
 
@@ -113,6 +114,10 @@
             class="navbar-item">
             Officals
           </a>
+          <a  href="/faq"
+          class="navbar-item">
+          FAQ
+        </a>
         </div>
       </div>
 
@@ -137,6 +142,9 @@
           </a>
         </div>
       </div>
+      <a href="/leagues/teams" class="navbar-item">
+        Teams
+      </a>
 
       <a href="/leagues/fixtures" class="navbar-item">
         Fixtures
@@ -159,7 +167,7 @@
 
     <div class="navbar-item">
 
-      <a style="padding-right: 2em;" href="/faq" class="navbar-item">
+      <a style="padding-right: 2em;" href="/shop" class="navbar-item">
         Shop
       </a>
 
@@ -277,54 +285,11 @@
   </div>
 </nav>
 </header>
-
-<div class="siema">
-  <div class="gallery">
-    <figure class="image is-16by9 is-640x360 gallery-image">
-      <img src="" />
-    </figure>
-    <div class="gallery-text">
-      <h3>BOOM! 01</h3>
-      <br />
-      <a href="#Welcome-To-The-Stadium">Arrow Down</a>
-    </div>
-  </div>
-  <div class="gallery">
-    <figure class="image is-16by9 is-640x360 gallery-image">
-      <img src="" />
-    </figure>
-    <div class="gallery-text"><h3>BOOM! 02</h3></div>
-  </div>
-  <div class="gallery">
-    <figure class="image is-16by9 is-640x360 gallery-image">
-      <img src="" />
-    </figure>
-    <div class="gallery-text"><h3>BOOM! 03</h3></div>
-  </div>
-  <div class="gallery">
-    <figure class="image is-16by9 is-640x360 gallery-image">
-      <img src="" />
-    </figure>
-    <div class="gallery-text"><h3>BOOM! 04</h3></div>
-  </div>
-  <div class="gallery">
-    <figure class="image is-16by9 is-640x360 gallery-image">
-      <img src="" />
-    </figure>
-    <div class="gallery-text"><h3>BOOM! 05</h3></div>
-  </div>
-  <div class="gallery">
-    <figure class="image is-16by9 is-640x360 gallery-image">
-      <img src="" />
-    </figure>
-    <div class="gallery-text"><h3>BOOM! 06</h3></div>
-  </div>
-</div>
-
-
-
 <div class="container max-height">
- <div style="padding-bottom: 200px;" class="carousel is-5 carousel-animated carousel-animate-slide">
+
+
+
+<div style="padding-bottom: 200px;" class="carousel is-5 carousel-animated carousel-animate-slide">
   <div class="carousel-container">
     <div class="carousel-item is-active">
       <figure class="image is-2by1">
@@ -374,9 +339,6 @@
 
 
 </div>
-
-</section>
-
 <footer>
   <nav
     class="navbar is-fixed-bottom"
@@ -416,26 +378,15 @@
   </nav>
 </footer>
 
+</section>
+
+
 
 </body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-<script src="/js/siema.min.js"></script>
-<script>
-const mySiema = new Siema({
-
-  duration: 1000,
-  loop: true,
-});
-
-// listen for keydown event
-setInterval(() => mySiema.next(), 4000)
-</script>
-
 <script src="/js/nav.js"></script>
-<script src="/js/modal.js"></script>
-<script src="/js/close.js"></script>
 <script src="/js/slider.js"></script>
 
 </body>

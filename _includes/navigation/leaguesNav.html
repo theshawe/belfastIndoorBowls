@@ -1,24 +1,10 @@
 <nav class="breadcrumb is-centered is-large" aria-label="breadcrumbs">
   <ul>
-    <li {% if page.category == 'leagues' %}class="is-active" {% elsif page.category == 'tuesdayMorningPairsLeague' %} class="is-active" {% elsif page.category == 'wednesdayMorningPairsLeague' %} class="is-active"   {% elsif page.category == 'thursdayEveningPairsLeague' %} class="is-active"  {% endif %}><a href="/leagues/">Leagues</a></li>
     <li {% if page.category == 'teams' %}class="is-active"{% endif %}><a href="/leagues/Teams">Teams</a></li>
     <li {% if page.category == 'fixtures' %}class="is-active"{% endif %}><a href="/leagues/fixtures">Fixtures</a></li>
     <li {% if page.category == 'results' %}class="is-active"{% endif %}><a href="/leagues/results" aria-current="page">Results</a></li>
+    <li {% if page.category == 'tuesdayMorningPairsLeague' %}class="is-active"{% endif %}><a href="tuesday-morning-pairs-league">Tuesday League</a></li>
+    <li {% if page.category == 'wednesdayMorningPairsLeague' %}class="is-active"{% endif %}><a href="wednesday-morning-pairs-league">Wednesday League</a></li>
+    <li {% if page.category == 'thursdayEveningPairsLeague' %}class="is-active"{% endif %}><a href="thursday-evening-pairs-league">Thursday League</a></li>
   </ul>
 </nav>
-
-<div class="columns">
-    <div class="column is-one-third">
-      <a {% if page.category == 'tuesdayMorningPairsLeague' %}class="is-active" {% endif %} href="tuesday-morning-pairs-league">TUESDAY MORNING PAIRS LEAGUE 10am</a>
-    </div>
-    <div class="column">
-      <a href="wednesday-morning-pairs-league"
-        >WEDNESDAY MORNING PAIRS LEAGUE 10am</a
-      >
-    </div>
-    <div class="column">
-      <a href="thursday-evening-pairs-league"
-        >THURSDAY EVENING PAIRS LEAGUE 7.15pm
-      </a>
-    </div>
-  </div>
