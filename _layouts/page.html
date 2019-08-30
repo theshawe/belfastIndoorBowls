@@ -20,24 +20,37 @@
 
 <body>
 
-<section class="rainbow">
-{% include header/header.html %}
-<div class="container max-height">
+	<section class="rainbow">
+		{% include header/header.html %}
+		<div class="container max-height">
 
 
 
-{{ content }}
-</div>
-{% include footer/footer.html %}
-</section>
+			{{ content }}
+		</div>
+		{% include footer/footer.html %}
+	</section>
 
 
 
 </body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 {% include tracking/ga.html %}
+<script src="/js/siema.min.js"></script>
+<script>
+	const mySiema = new Siema({
+
+		duration: 1000,
+		loop: true,
+	});
+
+	// listen for keydown event
+	setInterval(() => mySiema.next(), 4000)
+</script>
 
 <script src="/js/nav.js"></script>
+<script src="/js/modal.js"></script>
+<script src="/js/close.js"></script>
 <script src="/js/slider.js"></script>
 
 </body>
