@@ -1,0 +1,39 @@
+---
+label: Homepage
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: category
+  label: category
+- type: file
+  name: slide01
+  label: Full Width Slide - 01
+  description: This is the first background image to appear on the screen.
+- type: file
+  name: slide02
+  label: Full Width Slide - 02
+  description: This is the second background image to appear on the screen.
+- type: file
+  name: slide03
+  label: Full Width Slide - 03
+  description: This is the third background image to appear on the screen.
+- type: file
+  name: slide04
+  label: Full Width Slide - 04
+  description: This is the fourth background image to appear on the screen.
+- type: file
+  name: slide05
+  label: Full Width Slide - 05
+  description: This is the fifth background image to appear on the screen.
+- type: file
+  name: slide06
+  label: Full Width Slide - 06
+  description: This is the sixth background image to appear on the screen.
+pages:
+- index.html

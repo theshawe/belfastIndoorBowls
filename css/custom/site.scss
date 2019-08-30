@@ -1,64 +1,41 @@
-header {
-  background: #0575E6;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-header {
-
-  position: relative;
-  top: 0;
-  height: 140px;
-  z-index: 100;
-
+html,
+body {
+  background-image: linear-gradient(41deg, #004578 50%, #07b680 71%);
 }
 
 .rainbow {
+  background: #002144;
+  height: 100vh;
+}
 
+header {
+  position: relative;
+  top: 0;
+  z-index: 100;
+}
+
+.rainbow {
   background-size: contain;
 
   &:before {
-    content: "";
+    content: "Belfast Indoor Bowls Club";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(69deg, #4c8cedd1 40%, #1b67b161 35%, #1e14bdb3 10%
-    );
     opacity: 1;
+    height: 448px;
   }
 }
 
-
-
-
-.tile.is-vertical > .tile.is-child:not(:last-child) {
-
-    margin-bottom: 1.5rem !important;
-
-}
-.tile.is-vertical > .tile.is-child:not(:last-child) {
-
-    margin-bottom: 1.5rem !important;
-
-}
-.tile.is-child {
-
-    margin: 0 !important;
-        margin-bottom: 0px;
-
-}
 .notification.is-primary {
-
-    background-color: #00d1b2;
-    color: #fff;
-    background: #EFE38F;
-    background: -webkit-linear-gradient(to right, #51D2DB, #EFE38F);
-    background: linear-gradient(to right, #51D2DB, #EFE38F);
-    border-radius: 0;
-
+  background-color: #00d1b2;
+  color: #fff;
+  background: #efe38f;
+  background: -webkit-linear-gradient(to right, #51d2db, #efe38f);
+  background: linear-gradient(to right, #51d2db, #efe38f);
+  border-radius: 0;
 }
 
 .notification.is-warning {
@@ -66,23 +43,8 @@ header {
   color: rgba(255, 255, 255, 0.7);
 }
 
-img.topLeftLogo {
-
-  padding: 1em;
-  background-color: white;
-
-}
-
 .navbar {
   background-color: #0d87d4;
-}
-
-.logo {
-  padding: 1em;
-  padding-left: 16px;
-  text-shadow: 0 0 black;
-  background: #35afea;
-  margin-left: 0px;
 }
 
 a.navbar-item,
@@ -90,13 +52,13 @@ a.navbar-item,
   cursor: pointer;
   color: #fff;
   font-size: 22px;
-  font-weight: 100;
   letter-spacing: -2px;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
+
 a.link.is-info {
   padding-left: 1em;
-  font-size: 4em;
+  font-size: 2em;
   text-transform: capitalize;
   color: #0c0505de;
   font-weight: 900;
@@ -106,4 +68,120 @@ a.link.is-info {
 
 .tile {
   border-radius: 0px;
+}
+
+.googlemap {
+  position: relative;
+  padding-bottom: 75%; /* 4:3 ratio*/
+  height: 0;
+  overflow: hidden;
+}
+
+.googlemap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Navigation */
+
+header a.navbar-item {
+  color: #e4e2e4;
+  font-size: 1.5em;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+/* Sub Nav */
+
+.subNavHero {
+  background-color: #154277;
+}
+
+.breadcrumb a {
+  color: #96a4bb;
+}
+
+.breadcrumb li.is-active a {
+  color: #ccc738 !important;
+}
+
+.breadcrumb.is-large {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* home hub */
+
+.notification.is-membership {
+  background: #0f4278 !important;
+}
+
+/* home gallery */
+
+.gallery {
+  width: auto;
+  height: auto;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.gallery-image {
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+
+.gallery-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  text-align: center;
+  background-color: rgba(48, 5, 105, 0.68);
+  opacity: 1;
+  vertical-align: middle;
+  padding-top: 24.5%;
+}
+
+.gallery-text h3 {
+  color: white;
+  display: inline-table;
+  vertical-align: middle;
+  line-height: 100%;
+}
+
+/* home footer */
+
+footer .level {
+  margin-bottom: -7px !important;
+  text-align: center;
+  width: 100%;
+}
+/* Leagues CSS */
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #002144;
+  display: block;
+  border-bottom: 200px solid #002144;
 }

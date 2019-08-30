@@ -47,11 +47,10 @@
   color="#06091b"
 />
 
-	<title>hello</title>
+	<title>Home</title>
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="https://use.typekit.net/yim0qqq.css" />
-
+	<link rel="stylesheet" href="https://use.typekit.net/cpm1pmu.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
 
@@ -61,18 +60,29 @@
 
 <body>
 
-	<section class="rainbow">
-		<header>
-  <nav class="level">
-  <p class="level-item level-left">
-    <img class="topLeftLogo" src="/images/belfastIndoorBowlsLogo.png" width="auto" height="auto"
-      style="height:140px;" />
-    <a style="display: none;" class="link is-info">Belfast Indoor Bowls Club</a>
-  </p>
+<section class="rainbow">
+<header>
+  
+
+<nav class="level mainNavigation">
+  <a href="" class="level-left">
+    <img
+      class=""
+      src="/images/belfastIndoorBowlsLogo.png"
+      width="44px"
+      height="auto"
+    />
+  </a>
+  <a style="display: none;" class="link is-info">Belfast Indoor Bowls Club</a>
 
   <div class="navbar-brand">
-    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-      data-target="navbarBasicExample">
+    <a
+      role="button"
+      class="navbar-burger burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
+    >
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -81,83 +91,182 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a href="/home" class="navbar-item">
-        Home
+      <a href="http://localhost:4000" class="navbar-item">
+        Home <i style="padding-left: 1em; padding-right: .5em; font-size: 1.25em; margin-top: 0em;" class="fas fa-home"></i>
       </a>
 
-      <a href="/info" class="navbar-item">
-        Info
-      </a>
-
-      <a href="/bowling-events" class="navbar-item">
-        Bowling Events
-      </a>
-
-      <a href="/social-events" class="navbar-item">
-        Social Events
-      </a>
-
-      <a href="/shop" class="navbar-item">
-        Shop
-      </a>
-    </div>
-
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="modal">
-          <div class="modal-background"></div>
-          <div class="modal-card">
-            <header class="modal-card-head">
-              <p class="modal-card-title">Modal title</p>
-              <button class="delete" aria-label="close"></button>
-            </header>
-            <section class="modal-card-body">
-              <!-- Content ... -->
-            </section>
-            <footer class="modal-card-foot">
-              <button class="button is-success">Save changes</button>
-              <button class="button">Cancel</button>
-            </footer>
-          </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a href="/faq" class="navbar-link">
+          Club Information
+        </a>
+        <div class="navbar-dropdown">
+          <a   href="/info/location" class="navbar-item">
+            Location
+          </a>
+          <a   href="/info/club-facilities" class="navbar-item">
+            Club Facilities
+          </a>
+          <a   href="/info/session-times" class="navbar-item">
+            Session Times
+          </a>
+          <a  href="/info/bowls-programme" class="navbar-item">
+            Bowls Programme
+          </a>
+          <hr class="navbar-divider" />
+          <a   href="/info/visitor-information" class="navbar-item">
+            Visitor Information
+          </a>
+          <a   href="/info/officals" class="navbar-item">
+            Officals
+          </a>
         </div>
       </div>
+
+
+   
+     <div class="navbar-item has-dropdown is-hoverable">
+        <a href="/leagues" class="navbar-link">
+          Leagues
+        </a>
+        <div class="navbar-dropdown">
+          <a   href="/leagues/tuesday-morning-pairs-league.html" class="navbar-item">
+            Tuesday morning pairs league 10am
+          </a>
+          <a   href="/leagues/wednesday-morning-pairs-league.html" class="navbar-item">
+           Wednesday morning pairs league 10am
+          </a>
+          <a   href="/leagues/thursday-evening-pairs-league.html" class="navbar-item">
+        Thursday evening pairs league 7.15pm
+          </a>
+        </div>
+      </div>
+
+        <a href="/leagues/fixtures" class="navbar-item">
+        Fixtures <i style="padding-left: 1em; padding-right: .5em; font-size: 1.25em; margin-top: 0em;" class="fas fa-tablets"></i>
+      </a>
+
+        <a href="/leagues/results" class="navbar-item">
+        Results <i style="padding-left: 1em; padding-right: .5em; font-size: 1.25em; margin-top: 0em;" class="fas fa-table"></i>
+      </a>
+
+      <a href="/tournaments" class="navbar-item">
+        Tournaments <i style="padding-left: 1em; padding-right: .5em; font-size: 1.25em; margin-top: 0em;" class="fas fa-trophy"></i>
+      </a>
+
+   <a href="/news-whats-on.html" class="navbar-item">
+        News  <i style="padding-left: 1em; padding-right: .5em; font-size: 1.25em; margin-top: 0em;" class="fas fa-rss"></i>
+      </a>
+
     </div>
 
-    <div class="navbar-item has-dropdown is-hoverable">
-      <a href="/faq" class="navbar-link">
-        Recently Sold Items
-      </a>
-      <div class="navbar-dropdown">
-        <a href="/what-are-vegan-cakes" class="navbar-item">
-          Chalk spray | Price: £4.00
-        </a>
-        <a href="/gluten-free-vegan-cakes" class="navbar-item">
-          Henselite Grippo Polish | Price: £5.50
-        </a>
-        <a href="/where" class="navbar-item">
-          Drakes Pride four bowl carriers | Price: £9.50
-        </a>
-        <a href="/weddings" class="navbar-item">
-          Henselite Men's White Trousers | Price: £36.00
-        </a>
-        <hr class="navbar-divider" />
-        <a href="/contact" class="navbar-item">
-          Buy a bowling starter pack
-        </a>
-        <a href="/order" class="navbar-item">
-          Visit online store and browse our shop
-        </a>
-      </div>
-    </div>
 
     <div class="navbar-item">
-      <div class="buttons">
-        <a href="/order" class="button is-primary">
-          <strong>Memebership</strong>
+
+        <a style="padding-right: 2em;" href="/faq" class="navbar-item">
+          Shop <i style="padding-left: 1em; padding-right: .5em; font-size: 1.25em; margin-top: 0em;" class="fas fa-shopping-cart"></i>
         </a>
 
-        <a href="/contact" class="button is-light">
-          Venue
+
+
+
+      <div class="buttons">
+      
+      <button class="button is-primary modal-button" data-target="#myModal" aria-haspopup="true">Memebership / Join Today </button>
+
+<div class="modal" id="myModal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+ <div class="field">
+  <label class="label">Name</label>
+  <div class="control">
+    <input class="input" type="text" placeholder="Text input">
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Username</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+    <span class="icon is-small is-left">
+      <i class="fas fa-user"></i>
+    </span>
+    <span class="icon is-small is-right">
+      <i class="fas fa-check"></i>
+    </span>
+  </div>
+  <p class="help is-success">This username is available</p>
+</div>
+
+<div class="field">
+  <label class="label">Email</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+    <span class="icon is-small is-left">
+      <i class="fas fa-envelope"></i>
+    </span>
+    <span class="icon is-small is-right">
+      <i class="fas fa-exclamation-triangle"></i>
+    </span>
+  </div>
+  <p class="help is-danger">This email is invalid</p>
+</div>
+
+<div class="field">
+  <label class="label">Subject</label>
+  <div class="control">
+    <div class="select">
+      <select>
+        <option>Select dropdown</option>
+        <option>With options</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Message</label>
+  <div class="control">
+    <textarea class="textarea" placeholder="Textarea"></textarea>
+  </div>
+</div>
+
+<div class="field">
+  <div class="control">
+    <label class="checkbox">
+      <input type="checkbox">
+      I agree to the <a href="#">terms and conditions</a>
+    </label>
+  </div>
+</div>
+
+<div class="field">
+  <div class="control">
+    <label class="radio">
+      <input type="radio" name="question">
+      Yes
+    </label>
+    <label class="radio">
+      <input type="radio" name="question">
+      No
+    </label>
+  </div>
+</div>
+
+<div class="field is-grouped">
+  <div class="control">
+    <button class="button is-link">Submit</button>
+  </div>
+  <div class="control">
+    <button class="button is-text">Cancel</button>
+  </div>
+</div>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+
+        <a href="/event-hire.html" class="button is-light">
+          Venue / Event Hire
         </a>
 
         <a href="/contact" class="button is-light">
@@ -167,7 +276,11 @@
         <div class="navbar-item">
           <div class="navbar-brand">
             <a class="navbar-item" href="/">
-              <img src="/images/irishBowlingAssociationLogo.png" width="auto" height="auto" />
+              <img
+                src="/images/irishBowlingAssociationLogo.png"
+                width="auto"
+                height="auto"
+              />
             </a>
           </div>
         </div>
@@ -175,8 +288,201 @@
     </div>
   </div>
 </nav>
+
 </header>
-		<div class="carousel is-5 carousel-animated carousel-animate-slide">
+
+<div class="siema">
+  <div class="gallery">
+    <figure class="image is-16by9 is-640x360 gallery-image">
+      <img src="/images/bowlsPink.jpg" />
+    </figure>
+    <div class="gallery-text">
+      <h3>BOOM! 01</h3>
+      <br />
+      <a href="#Welcome-To-The-Stadium">Arrow Down</a>
+    </div>
+  </div>
+  <div class="gallery">
+    <figure class="image is-16by9 is-640x360 gallery-image">
+      <img src="/images/IMG_20190603_102218.jpg" />
+    </figure>
+    <div class="gallery-text"><h3>BOOM! 02</h3></div>
+  </div>
+  <div class="gallery">
+    <figure class="image is-16by9 is-640x360 gallery-image">
+      <img src="/images/bowler01.jpg" />
+    </figure>
+    <div class="gallery-text"><h3>BOOM! 03</h3></div>
+  </div>
+  <div class="gallery">
+    <figure class="image is-16by9 is-640x360 gallery-image">
+      <img src="/images/bowlsBlue.jpg" />
+    </figure>
+    <div class="gallery-text"><h3>BOOM! 04</h3></div>
+  </div>
+  <div class="gallery">
+    <figure class="image is-16by9 is-640x360 gallery-image">
+      <img src="/images/frames.jpg" />
+    </figure>
+    <div class="gallery-text"><h3>BOOM! 05</h3></div>
+  </div>
+  <div class="gallery">
+    <figure class="image is-16by9 is-640x360 gallery-image">
+      <img src="/images/bowler02.jpg" />
+    </figure>
+    <div class="gallery-text"><h3>BOOM! 06</h3></div>
+  </div>
+</div>
+
+
+
+<div class="container max-height">
+<nav class="level has-text-white">
+  <div class="level-item has-text-centered ">
+    <div>
+      <p class="heading has-text-white">Summer Leagues</p>
+      <p class="title has-text-white">3</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered has-text-white">
+    <div>
+      <p class="heading has-text-white">Summer Teams</p>
+      <p class="title has-text-white">28</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered has-text-white">
+    <div>
+      <p class="heading has-text-white">Fixtures Played</p>
+      <p class="title has-text-white">98</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered has-text-white">
+    <div>
+      <p class="heading has-text-white">Points so far</p>
+      <p class="title has-text-white">392</p>
+    </div>
+  </div>
+</nav>
+ <h2
+  id="Welcome-To-The-Stadium"
+  class="subtitle has-text-centered has-text-weight-bold"
+>
+  The Stadium shop is open <br> Monday - Friday 10am - 2pm
+</h2>
+
+<div class="tile is-ancestor">
+  <div class="tile is-vertical is-8">
+    <div class="tile">
+      <div class="tile is-parent is-vertical">
+        <article class="tile is-child notification is-primary">
+          <div class="row">
+            <div class="columns">
+              <div class="column"><a href="/leagues/">Leagues</a></div>
+              <div class="column"><a href="/teams/">Teams</a></div>
+              <div class="column"><a hrrf="/fixtures/">Fixtures</a></div>
+              <div class="column"><a href="/results/">Results</a></div>
+            </div>
+          </div>
+        </article>
+        <article class="tile is-child notification is-warning">
+          <p class="title">Address</p>
+          <div class="columns">
+            <div class="column">
+              <p class="subtitle">
+                115 Milltown Road<br />Shaws Bridge<br />Belfast<br />BT8 7XP
+              </p>
+            </div>
+            <div class="column">
+              <figure class="image is-16by9 is-640x360">
+                <img src="/images/homepagebowlsoutfront.png" />
+              </figure>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-info is-membership">
+          <p class="title has-text-centered">MEMBERSHIP</p>
+          <p class="subtitle has-text-centered">
+            Register at the stadium or online today.
+          </p>
+          <figure class="image is-4by3">
+            <img src="/images/jointoday.png" />
+          </figure>
+        </article>
+      </div>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-danger">
+        <p class="title">Phone / Fax</p>
+        <p class="subtitle">
+          tel: +44 (0) 2890 491 396 <br />
+          fax: +44 (0) 2890 491 649 <br />
+        </p>
+        <div class="content">
+          email:
+          <a href="mailto:belfastindoorbowls@btconnect.com"
+            >belfastindoorbowls@btconnect.com</a
+          >
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child notification is-success ">
+      <div class="content">
+        <div class="columns is-full">
+          <div class="column ">
+            <p class="title has-text-centered">Summer Hours</p>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-uppercase has-text-weight-bold">Day</div>
+          <div class="column is-uppercase has-text-weight-bold">Morning</div>
+          <div class="column is-uppercase has-text-weight-bold">Evening</div>
+        </div>
+
+        <div class="columns">
+          <div class="column">Monday</div>
+          <div class="column">10am - 2.30pm</div>
+          <div class="column">Closed</div>
+        </div>
+
+        <div class="columns">
+          <div class="column">Tuesday</div>
+          <div class="column">10am - 2.30pm</div>
+          <div class="column">Closed</div>
+        </div>
+
+        <div class="columns">
+          <div class="column">Wednesday</div>
+          <div class="column">10am - 2.30pm</div>
+          <div class="column">Closed</div>
+        </div>
+
+        <div class="columns">
+          <div class="column">Thursday</div>
+          <div class="column">10am - 2.30pm</div>
+          <div class="column">7pm - 11pm</div>
+        </div>
+
+        <div class="columns">
+          <div class="column">Friday</div>
+          <div class="column">10am</div>
+          <div class="column">7pm - 11pm</div>
+        </div>
+
+        <div class="columns">
+          <div class="column">Saturday/Sunday</div>
+          <div class="column">Closed</div>
+          <div class="column">Closed</div>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+ <div style="padding-bottom: 200px;" class="carousel is-5 carousel-animated carousel-animate-slide">
   <div class="carousel-container">
     <div class="carousel-item is-active">
       <figure class="image is-2by1">
@@ -225,111 +531,69 @@
 </div>
 
 
-		<div class="tile is-ancestor">
-    <div class="tile is-vertical is-8">
-        <div class="tile">
-            <div class="tile is-parent is-vertical">
-                <article class="tile is-child notification is-primary">
-                    <p class="title">Vertical...</p>
-                    <p class="subtitle">Top tile</p>
-                </article>
-                <article class="tile is-child notification is-warning">
-                    <p class="title">Address</p>
-                    <p class="subtitle">115 Milltown Road<br>
-                        Shaws Bridge<br>
-                        Belfast<br>
-                        BT8 7XP</p>
-                </article>
-            </div>
-            <div class="tile is-parent">
-                <article class="tile is-child notification is-info">
-                    <p class="title">MEMBERSHIP</p>
-                    <p class="subtitle">Join Today / Forms</p>
-                    <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/640x480.png">
-                    </figure>
-                </article>
-            </div>
-        </div>
-        <div class="tile is-parent">
-            <article class="tile is-child notification is-danger">
-                <p class="title">Phone / Fax</p>
-                <p class="subtitle">
-                    tel: +44 (0) 2890 491 396 <br>
-                    fax: +44 (0) 2890 491 649 <br> </p>
-                <div class="content">
-
-                    email: <a href="mailto:belfastindoorbowls@btconnect.com">belfastindoorbowls@btconnect.com</a>
-
-                </div>
-            </article>
-        </div>
-    </div>
-    <div class="tile is-parent">
-        <article class="tile is-child notification is-success">
-            <div class="content">
-                <p class="title">SUMMER OPENING HOURS:</p>
-                <p class="subtitle"> THE STADIUM IS OPEN FROM MONDAY TO WEDNESDAY 10am - 2.30pm</p>
-                <div class="content">
-                    <p class="subtitle"> THURSDAY & FRIDAY 10am - 2.30pm AND 7pm - 11pm
-                    </p>
-                    <p class="subtitle"> THE SHOP IS OPEN MONDAY TO FRIDAY 10am - 2pm
-                    </p>
-                    <p class="subtitle"> THE RESTAURANT IS CLOSED UNTIL FURTHER NOTICE </h2>
-                    </p>
-                </div>
-            </div>
-        </article>
-    </div>
 </div>
 
+</section>
 
-
-
-		<div class="container max-height">
-			
-		</div>
-	</section>
-
-
-
-	<footer>
-  <nav class="navbar is-fixed-bottom" role="navigation" aria-label="main navigation">
+<footer>
+  <nav
+    class="navbar is-fixed-bottom"
+    role="navigation"
+    aria-label="main navigation"
+  >
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        <img src="/images/belfastIndoorBowlsLogo.png" width="auto" height="200" />
+        <img
+          src="/images/belfastIndoorBowlsLogo.png"
+          width="auto"
+          height="200"
+        />
       </a>
     </div>
 
     <nav class="level">
       <div class="level-item has-text-centered">
         <div>
-
-          <p class="heading"> <a href="">Terms | Privacy</a></p>
-
+          <p class="heading"><a href="">Terms | Privacy</a></p>
         </div>
       </div>
-
     </nav>
-
-
-
 
 
     <div class="navbar-end">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-          <img src="/images/irishBowlingAssociationLogo.png" width="auto" height="200" />
+          <img
+            src="/images/irishBowlingAssociationLogo.png"
+            width="auto"
+            height="200"
+          />
         </a>
       </div>
     </div>
   </nav>
 </footer>
+
+
 </body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
+<script src="/js/siema.min.js"></script>
+<script>
+const mySiema = new Siema({
+
+  duration: 1000,
+  loop: true,
+});
+
+// listen for keydown event
+setInterval(() => mySiema.next(), 4000)
+</script>
+
 <script src="/js/nav.js"></script>
+<script src="/js/modal.js"></script>
+<script src="/js/close.js"></script>
 <script src="/js/slider.js"></script>
 
 </body>

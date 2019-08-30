@@ -1,0 +1,7 @@
+geoTitle: Map title
+geoWidth: 100%
+geoHeight: 300
+geoPreEmbed: https://www.openstreetmap.org/export/embed.html?
+geoEmbed: bbox=9.363741874694826%2C51.97525849656705%2C9.38659429550171%2C51.99197609916384&amp;layer=mapnik&amp;
+geoMapBig: mlat=51.9836&amp;mlon=9.3752#map=16/51.9836/9.3752
+geoMapBigText: Bigger map please

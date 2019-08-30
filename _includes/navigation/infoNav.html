@@ -1,0 +1,10 @@
+<nav class="breadcrumb is-left is-large" aria-label="breadcrumbs">
+  <ul>
+    <li {% if page.category == 'location' %}class="is-active"{% endif %}><a href="/info/location">Location</a></li>
+    <li {% if page.category == 'club-facilities' %}class="is-active"{% endif %}><a href="/info/club-facilities">Club Facilities</a></li>
+    <li {% if page.category == 'session-times' %}class="is-active"{% endif %}><a href="/info/session-times">Session Times</a></li>
+    <li {% if page.category == 'bowls-programme' %}class="is-active"{% endif %}><a href="/info/bowls-programme" aria-current="page">Bowls Programme</a></li>
+    <li {% if page.category == 'visitor-info' %}class="is-active"{% endif %}><a href="/info/visitor-information">Visitor Information</a></li>
+    <li {% if page.category == 'officals' %}class="is-active"{% endif %}><a href="/info/officals">Officals</a></li>
+  </ul>
+</nav>

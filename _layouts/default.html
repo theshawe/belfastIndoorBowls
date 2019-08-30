@@ -9,8 +9,7 @@
 	<title>{{ page.title }}</title>
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="https://use.typekit.net/yim0qqq.css" />
-
+	<link rel="stylesheet" href="https://use.typekit.net/cpm1pmu.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
 
@@ -20,28 +19,39 @@
 
 <body>
 
-	<section class="rainbow">
-		{% include header/header.html %}
-		{% include slider.html %}
+<section class="rainbow">
+{% include header/header.html %}
 
-		{% include home/hub.html %}
-
+{% include home/fullWidthSlider.html %}
 
 
+<div class="container max-height">
+{{ content }}
+</div>
 
-		<div class="container max-height">
-			{{ content }}
-		</div>
-	</section>
+</section>
 
+{% include footer/footer.html %}
 
-
-	{% include footer/footer.html %}
 </body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 {% include tracking/ga.html %}
 
+<script src="/js/siema.min.js"></script>
+<script>
+const mySiema = new Siema({
+
+  duration: 1000,
+  loop: true,
+});
+
+// listen for keydown event
+setInterval(() => mySiema.next(), 4000)
+</script>
+
 <script src="/js/nav.js"></script>
+<script src="/js/modal.js"></script>
+<script src="/js/close.js"></script>
 <script src="/js/slider.js"></script>
 
 </body>
