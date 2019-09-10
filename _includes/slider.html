@@ -1,0 +1,11 @@
+<script src="/js/siema.min.js"></script>
+<script>
+const mySiema = new Siema({
+
+  duration: 1000,
+  loop: true,
+});
+
+// listen for keydown event
+setInterval(() => mySiema.next(), 4000)
+</script>

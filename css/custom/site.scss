@@ -151,14 +151,22 @@ h2#Welcome-To-The-Stadium {
   background-color: rgba(48, 5, 105, 0.68);
   opacity: 1;
   vertical-align: middle;
-  padding-top: 24.5%;
+  padding-top: 5%;
+}
+
+.gallery-text img {
+  max-width: 420px;
 }
 
 .gallery-text h3 {
-  color: white;
-  display: inline-table;
-  vertical-align: middle;
-  line-height: 100%;
+color: #ffffff;
+vertical-align: middle;
+line-height: 100%;
+display: block;
+font-size: 3em;
+font-style: normal;
+font-weight: 600;
+line-height: 2em;
 }
 
 /* home modal */
